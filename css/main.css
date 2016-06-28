@@ -1,0 +1,107 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html body{
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+   /* font-size: 0.875em;*/
+
+}
+header {
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    border : 0;
+
+    display: block;
+    background-color: white;
+    /* radial-gradient(shape size at position, start-color, ..., last-color); */
+    
+    background: -o-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
+    background: -ms-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%); 
+    background: -webkit-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
+    background: -moz-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
+    background: radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
+}
+.navbar-default{
+    background-image:  none;
+}
+
+#logo {
+    padding: 16px 0 0 0;
+}
+nav {
+    
+    -webkit-font-smoothing: antialiased;
+    background: #4ac0f0;
+    background: -moz-linear-gradient(top,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4ac0f0),color-stop(47%,#37afe1),color-stop(100%,#0e8dc2));
+    background: -webkit-linear-gradient(top,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
+    background: -linear-gradient(top, #4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
+    
+}
+
+
+nav ul, footer ul {
+    list-style: none;
+    padding: 0 2em 0 0;
+    margin-left: 0.76923em;
+    }
+
+nav li, footer li{
+    display:inline;
+    line-height: 2.5em;
+}
+nav a, footer a {
+    text-decoration: none;
+    color: white;
+}
+nav li a, footer li a  {
+    color: white;
+    font-size: 1em; /* 14px/16=0.875em */
+    padding: 0 1em 0 0;
+    white-space: nowrap;
+
+}
+nav li a {
+    font-weight: bold;
+}
+
+#fin{
+    fill: #4ac0f0;
+    height: 44px;
+    width: 40px;
+    float: right;
+    margin-right: 5%;
+    margin-top: -18px;
+}
+footer {
+ background-color: #5b5b5b;;
+ color: white;
+}
+
+@media (min-width: 768px)
+{
+.navbar {
+     border-radius: 0px; 
+     border: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

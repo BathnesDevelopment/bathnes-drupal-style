@@ -35,7 +35,7 @@ header {
 #logo {
     padding: 16px 0 0 0;
 }
-nav {
+nav,#myNavbar,.navbar-header,.navbar {
     
     -webkit-font-smoothing: antialiased;
     background: #4ac0f0;
@@ -43,6 +43,8 @@ nav {
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4ac0f0),color-stop(47%,#37afe1),color-stop(100%,#0e8dc2));
     background: -webkit-linear-gradient(top,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
     background: -linear-gradient(top, #4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
+    border: 0;
+    border-radius: 0px;
     
 }
 
@@ -85,14 +87,26 @@ footer {
  color: white;
 }
 
-@media (min-width: 768px)
-{
-.navbar {
-     border-radius: 0px; 
-     border: none;
+.container-fluid {
+    padding: 0;
+}
+.navbar-toggle {
+
+   background-color: lightgray; 
+
+}
+
+@media screen and  (max-width: 768px){
+.collapse li {
+   display: block; 
+}
+.collapse li a{
+padding: 0;
 }
 
 }
+
+
 
 
 

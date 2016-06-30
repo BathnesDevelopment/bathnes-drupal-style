@@ -3,76 +3,100 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html body{
+html body {
     font-family: Arial,Helvetica,sans-serif;
     margin: 0px;
     padding: 0px;
     width: 100%;
     max-width: 1140px;
     margin: auto;
-   /* font-size: 0.875em;*/
-
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	background-color: #ffffff;
 }
-header {
+header{
     margin: 0px 0px 20px 0px;
     padding: 0;
     border : 0;
-
     display: block;
     background-color: white;
-    /* radial-gradient(shape size at position, start-color, ..., last-color); */
-    
-    background: -o-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
-    background: -ms-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%); 
-    background: -webkit-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
-    background: -moz-radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
-    background: radial-gradient(ellipse 45% 40% at top, grey 0%,lightgrey 30%, white 100%);
+	/* radial-gradient(shape size at position, start-color, ..., last-color); */
+	background: -o-radial-gradient(ellipse 50% 40% at top, grey 0%,lightgrey 40%, white 100%) no-repeat;
+    background: -ms-radial-gradient(ellipse 50% 40% at top, grey 0%,lightgrey 40%, white 100%) no-repeat; 
+    background: -webkit-radial-gradient(ellipse 50% 40% at top, grey 0%,lightgrey 40%, white 100%) no-repeat;
+    background: -moz-radial-gradient(ellipse 50% 40% at top, grey 0%,lightgrey 40%, white 100%) no-repeat;
+    background: radial-gradient(ellipse 50% 40% at top, grey 0%,lightgrey 40%, white 100%) no-repeat;
 }
 .navbar-default{
     background-image:  none;
 }
+.container{
+	padding:0px;
+	max-width:1140px
+}
+.navbar > .container {
+	padding: 0px 15px;
+}
 
 #logo {
-    padding: 16px 0 0 0;
+	padding: 16px 0 0 0;
 }
 nav,#myNavbar,.navbar-header,.navbar {
     
     -webkit-font-smoothing: antialiased;
     background: #4ac0f0;
+	background: linear-gradient(to bottom,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
     background: -moz-linear-gradient(top,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4ac0f0),color-stop(47%,#37afe1),color-stop(100%,#0e8dc2));
     background: -webkit-linear-gradient(top,#4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
     background: -linear-gradient(top, #4ac0f0 0%,#37afe1 47%,#0e8dc2 100%);
     border: 0;
     border-radius: 0px;
-    
+    min-height: 35px;
 }
-
 
 nav ul, footer ul {
     list-style: none;
     padding: 0 2em 0 0;
     margin-left: 0.76923em;
+	margin-bottom: 0px;
     }
 
-nav li, footer li{
+.nav li, footer li{
     display:inline;
-    line-height: 2.5em;
+    padding: 0px;
 }
-nav a, footer a {
+.nav a, footer a, .navbar-brand  a{
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
-nav li a, footer li a  {
-    color: white;
-    font-size: 1em; /* 14px/16=0.875em */
-    padding: 0 1em 0 0;
+.nav li a, footer li a {
+    color: white !important;
+    font-size: 1em !important; /* 14px/16=0.875em */
+    padding: 0 2em 0 0 !important;
+	line-height: 35px !important;
     white-space: nowrap;
 
 }
-nav li a {
+.nav li a, .navbar-brand{
     font-weight: bold;
+	font-size: 1em !important;
+	margin-left:0em !important;
+    color: white !important;
 }
+@media (min-width:768px){
+	.navbar-brand{
+		padding: 0 2em 0 0 !important;
+		line-height: 35px !important;
+	}
+}
+
+.navbar-brand, .collapse, .navbar-collapse{
+	height:35px !important;
+	min-height: 35px;
+}
+
 
 #fin{
     fill: #4ac0f0;
@@ -85,6 +109,15 @@ nav li a {
 footer {
  background-color: #5b5b5b;;
  color: white;
+}
+
+@media screen and (max-width: 600px)
+{
+   #fin,#logo{
+	  display: none;
+	  padding:0;
+	  margin: :0;
+	} 
 }
 
 .container-fluid {
@@ -105,6 +138,31 @@ padding: 0;
 }
 
 }
+.form-group span{
+	font-weight:bold;
+	float:left;
+}
+
+/*	Form styles */
+input[type="button"],.form-submit,input[type="submit"]
+{
+	background:url(/sites/all/themes/banes7/css/images/bg_submit_button.png) repeat-x #ee7c00;
+	border:0 none;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-ms-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	-webkit-box-shadow:0 1px 2px #888888;
+	-moz-box-shadow:0 1px 2px #888888;
+	box-shadow:0 1px 2px #888888;
+	color:#0075a1;
+	cursor:pointer;
+	padding:0 0.76923em;
+	letter-spacing:1px;
+	text-decoration:none;
+}
+/*	End Form styles */
 
 
 
